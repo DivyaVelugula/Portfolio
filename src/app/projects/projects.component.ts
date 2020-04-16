@@ -16,14 +16,17 @@ export class ProjectsComponent implements OnInit {
     $('#project1').click(() => {
       $('#ModalTitle2').text('Twitter Data Analysis');
       $('#twitterData').show();
-      $('#ShuttleData').hide();
-      $('#ASEData').hide();
-      $('#Unity').hide();
-      $('#other').hide();
+      $('#walmartSalesData').hide();
       $('#ModalExp').modal('toggle');
     });
 
+      $('#project2').click(() => {
+        $('#ModalTitle2').text('Walmart Sales');
+        $('#twitterData').hide();
+        $('#walmartSalesData').show();
+        $('#ModalExp').modal('toggle');
 
+      });
     });
   }
 
